@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:layout_marginTop="55dp"
+        app:passwordToggleEnabled="true"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/billabong"
+        android:gravity="center"
+        android:text="Instagram"
+        android:textSize="70sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/LoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Phone number, email or username"
+        android:background="@drawable/edit_text_bg"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Password"
+        android:background="@drawable/edit_text_bg"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="20dp"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:backgroundTint="#039BE5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fogot your login details?"/>
+
+        <Button
+            android:id="@+id/btnHelp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Get help logging in"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            tools:visibility="visible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:background="#E2e2e2"
+            android:layout_marginTop="10dp"
+        />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"/>
+        <View
+            android:layout_width="140dp"
+            android:layout_height="1dp"
+            android:background="#E2e2e2"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login with Facebook"
+            android:drawableLeft="@drawable/fb_icon"
+            android:padding="8dp"
+            android:gravity="center"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="#039BE5"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up."
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="@color/black"
+            android:layout_marginLeft="-13dp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
