@@ -1,15 +1,19 @@
 package com.example.ptsgenap10rpl108;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
 
+public class MainActivity extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -22,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
                     login();
                 }
             });
+
+
         }
 
 
@@ -38,10 +44,12 @@ public class MainActivity extends AppCompatActivity {
             //toast = alert
 
             if (emailLog.equals(emailVer) && passwordLog.equals(passwordVer)) {
-                Toast.makeText(this, "Anda Masuk", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, DashboardMenu.class);
+                startActivity(intent);
             }else {
                 Toast.makeText(this, "username atau password salah", Toast.LENGTH_SHORT).show();
             }
 
         }
+
     }
